@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PIGI_G: Référence du fichier breakout.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PIGI_G
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('breakout_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Espaces de nommage</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier breakout.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;GLFW/glfw3.h&gt;</code><br />
+<code>#include &lt;GL/gl.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;ft2build.h&gt;</code><br />
+<code>#include &quot;include/stb_image.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_config_1_1_color.html">Config::Color</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure pour les couleurs.  <a href="struct_config_1_1_color.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vec2.html">Vec2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structures utilitaires pour les vecteurs 2D et les rectangles.  <a href="struct_vec2.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rect.html">Rect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure pour un rectangle.  <a href="struct_rect.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_manager.html">InputManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère les événements d'entrée du clavier, de la souris et les interactions du curseur.  <a href="class_input_manager.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_renderer.html">TextRenderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère le rendu du texte à l'écran en utilisant FreeType.  <a href="class_text_renderer.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_text_renderer_1_1_character.html">TextRenderer::Character</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure pour stocker les propriétés d'un caractère de police.  <a href="struct_text_renderer_1_1_character.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_paddle.html">Paddle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente la raquette contrôlée par le joueur.  <a href="class_paddle.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html">Ball</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente la balle du jeu.  <a href="class_ball.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick.html">Brick</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente une brique individuelle dans le jeu.  <a href="class_brick.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level.html">Level</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère la grille de briques, le chargement et la sauvegarde des niveaux.  <a href="class_level.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html">Game</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe principale du jeu, gérant la boucle de jeu, les états et les objets principaux.  <a href="class_game.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Espaces de nommage</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html">Config</a></td></tr>
+<tr class="memdesc:namespace_config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constantes de configuration. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html">Utils</a></td></tr>
+<tr class="memdesc:namespace_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonctions utilitaires pour dessiner des formes géométrique de base et gérer les textures. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a18372412ad2fc3ce1e3240b3cf0efe78" id="r_a18372412ad2fc3ce1e3240b3cf0efe78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18372412ad2fc3ce1e3240b3cf0efe78">STB_IMAGE_IMPLEMENTATION</a></td></tr>
+<tr class="memdesc:a18372412ad2fc3ce1e3240b3cf0efe78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bibliothèques incluses.  <br /></td></tr>
+<tr class="separator:a18372412ad2fc3ce1e3240b3cf0efe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3" id="r_ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="memdesc:ae71449b1cc6e6250b91f539153a7a0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour le rendu des cercles.  <br /></td></tr>
+<tr class="separator:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a7899b65f1ea0f655e4bbf8d2a5714285" id="r_a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> { <a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285a3ed53fbeb1eab0443561b68ca0c0b5cf">MENU</a>
+, <a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285a4504e1ed59cd9732b8a844e5424e6f13">GAME</a>
+, <a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285a4698850447aa09571776addcb6a2911b">EDITOR</a>
+, <a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285a835d592fc110ac5d9471b44151d96d40">EXITING</a>
+ }</td></tr>
+<tr class="memdesc:a7899b65f1ea0f655e4bbf8d2a5714285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Déclaration des états du jeu.  <a href="#a7899b65f1ea0f655e4bbf8d2a5714285">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a01ba631273d6bba1066b97234fa5c551" id="r_a01ba631273d6bba1066b97234fa5c551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a01ba631273d6bba1066b97234fa5c551">Config::getBrickColorByScore</a> (int score)</td></tr>
+<tr class="memdesc:a01ba631273d6bba1066b97234fa5c551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient la couleur de la brique en fonction de sa valeur de score.  <br /></td></tr>
+<tr class="separator:a01ba631273d6bba1066b97234fa5c551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0bd9c303f0148c028592b21fe4d5cbd" id="r_ac0bd9c303f0148c028592b21fe4d5cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#ac0bd9c303f0148c028592b21fe4d5cbd">Utils::drawRect</a> (float x, float y, float width, float height, <a class="el" href="struct_config_1_1_color.html">Config::Color</a> color)</td></tr>
+<tr class="memdesc:ac0bd9c303f0148c028592b21fe4d5cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un rectangle.  <br /></td></tr>
+<tr class="separator:ac0bd9c303f0148c028592b21fe4d5cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567846338ef6fc922a95f17aa00e5142" id="r_a567846338ef6fc922a95f17aa00e5142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a567846338ef6fc922a95f17aa00e5142">Utils::drawRect</a> (const <a class="el" href="struct_rect.html">Rect</a> &amp;rect, <a class="el" href="struct_config_1_1_color.html">Config::Color</a> color)</td></tr>
+<tr class="memdesc:a567846338ef6fc922a95f17aa00e5142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un rectangle en utilisant la structure <a class="el" href="struct_rect.html" title="Structure pour un rectangle.">Rect</a>.  <br /></td></tr>
+<tr class="separator:a567846338ef6fc922a95f17aa00e5142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbbb12a1f7fa02b42845858543415bf" id="r_a3cbbb12a1f7fa02b42845858543415bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a3cbbb12a1f7fa02b42845858543415bf">Utils::drawCircle</a> (float cx, float cy, float radius, int segments, <a class="el" href="struct_config_1_1_color.html">Config::Color</a> color)</td></tr>
+<tr class="memdesc:a3cbbb12a1f7fa02b42845858543415bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un cercle.  <br /></td></tr>
+<tr class="separator:a3cbbb12a1f7fa02b42845858543415bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f77eb18d364ce4d7f4741d124fd66ca" id="r_a3f77eb18d364ce4d7f4741d124fd66ca"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a3f77eb18d364ce4d7f4741d124fd66ca">Utils::loadTexture</a> (const char *filepath, int &amp;outWidth, int &amp;outHeight)</td></tr>
+<tr class="memdesc:a3f77eb18d364ce4d7f4741d124fd66ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une texture depuis un fichier.  <br /></td></tr>
+<tr class="separator:a3f77eb18d364ce4d7f4741d124fd66ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228411ad9bab64d1366226188fa48763" id="r_a228411ad9bab64d1366226188fa48763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a228411ad9bab64d1366226188fa48763">Utils::drawTexturedRect</a> (float x, float y, float width, float height, GLuint textureID)</td></tr>
+<tr class="memdesc:a228411ad9bab64d1366226188fa48763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un rectangle texturé.  <br /></td></tr>
+<tr class="separator:a228411ad9bab64d1366226188fa48763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale du programme.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a108e964272e393c46e531187f04ccb6b" id="r_a108e964272e393c46e531187f04ccb6b"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a108e964272e393c46e531187f04ccb6b">Config::DEFAULT_WINDOW_WIDTH</a> = 1024</td></tr>
+<tr class="separator:a108e964272e393c46e531187f04ccb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e0142325b421dbf90f5dd341cf4b94" id="r_a00e0142325b421dbf90f5dd341cf4b94"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a00e0142325b421dbf90f5dd341cf4b94">Config::DEFAULT_WINDOW_HEIGHT</a> = 768</td></tr>
+<tr class="separator:a00e0142325b421dbf90f5dd341cf4b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eeaee5c24408d2284ff0e884160a1de" id="r_a2eeaee5c24408d2284ff0e884160a1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a2eeaee5c24408d2284ff0e884160a1de">Config::WINDOW_WIDTH</a> = 0</td></tr>
+<tr class="separator:a2eeaee5c24408d2284ff0e884160a1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cd7038c6e3c85c4b2d3abb1a1ea4f1" id="r_ae0cd7038c6e3c85c4b2d3abb1a1ea4f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ae0cd7038c6e3c85c4b2d3abb1a1ea4f1">Config::WINDOW_HEIGHT</a> = 0</td></tr>
+<tr class="separator:ae0cd7038c6e3c85c4b2d3abb1a1ea4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d7aea671ae30e17a58ce2a934c75b6" id="r_a37d7aea671ae30e17a58ce2a934c75b6"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a37d7aea671ae30e17a58ce2a934c75b6">Config::TARGET_FPS</a> = 60.0f</td></tr>
+<tr class="separator:a37d7aea671ae30e17a58ce2a934c75b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9991531f27ae4473bab0ba47ac031495" id="r_a9991531f27ae4473bab0ba47ac031495"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a9991531f27ae4473bab0ba47ac031495">Config::PADDLE_WIDTH</a> = 130.0f</td></tr>
+<tr class="separator:a9991531f27ae4473bab0ba47ac031495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a8a45f7fab3353b9d1883c61a2e695" id="r_aa0a8a45f7fab3353b9d1883c61a2e695"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#aa0a8a45f7fab3353b9d1883c61a2e695">Config::PADDLE_HEIGHT</a> = 20.0f</td></tr>
+<tr class="separator:aa0a8a45f7fab3353b9d1883c61a2e695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2839ba249955eaeb3445b00c35bffa03" id="r_a2839ba249955eaeb3445b00c35bffa03"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a2839ba249955eaeb3445b00c35bffa03">Config::BRICK_WIDTH</a> = 75.0f</td></tr>
+<tr class="separator:a2839ba249955eaeb3445b00c35bffa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e0896c880d1a105d9b7cab05d51cb4" id="r_a16e0896c880d1a105d9b7cab05d51cb4"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a16e0896c880d1a105d9b7cab05d51cb4">Config::BRICK_HEIGHT</a> = 25.0f</td></tr>
+<tr class="separator:a16e0896c880d1a105d9b7cab05d51cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3ab7066c8151fe133662c450df5443" id="r_a0a3ab7066c8151fe133662c450df5443"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a0a3ab7066c8151fe133662c450df5443">Config::BRICK_SPACING</a> = 3.0f</td></tr>
+<tr class="separator:a0a3ab7066c8151fe133662c450df5443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0ff97546f76ca06e825336bafc396b" id="r_a3b0ff97546f76ca06e825336bafc396b"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a3b0ff97546f76ca06e825336bafc396b">Config::GRID_COLS</a> = 14</td></tr>
+<tr class="separator:a3b0ff97546f76ca06e825336bafc396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6bb488f24368d77459cd911e79778f" id="r_a7e6bb488f24368d77459cd911e79778f"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a7e6bb488f24368d77459cd911e79778f">Config::GRID_ROWS</a> = 8</td></tr>
+<tr class="separator:a7e6bb488f24368d77459cd911e79778f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7e7ac811d2109d4dd8b80a9dd31770" id="r_a2b7e7ac811d2109d4dd8b80a9dd31770"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a2b7e7ac811d2109d4dd8b80a9dd31770">Config::BALL_RADIUS</a> = 10.0f</td></tr>
+<tr class="separator:a2b7e7ac811d2109d4dd8b80a9dd31770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2733ad56d17eb04f7369a49e30a532" id="r_aca2733ad56d17eb04f7369a49e30a532"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#aca2733ad56d17eb04f7369a49e30a532">Config::PADDLE_MAX_BOUNCE_ANGLE_DEG</a> = 75.0f</td></tr>
+<tr class="separator:aca2733ad56d17eb04f7369a49e30a532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e5ac3c69478e69473aad4fa1226175" id="r_a37e5ac3c69478e69473aad4fa1226175"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a37e5ac3c69478e69473aad4fa1226175">Config::BALL_INITIAL_SPEED_X_FACTOR</a> = 0.25f</td></tr>
+<tr class="separator:a37e5ac3c69478e69473aad4fa1226175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8d00a70e71a7f43e5ca7329c1dddc5" id="r_a4c8d00a70e71a7f43e5ca7329c1dddc5"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a4c8d00a70e71a7f43e5ca7329c1dddc5">Config::BALL_INITIAL_SPEED_Y_FACTOR</a> = 0.25f</td></tr>
+<tr class="separator:a4c8d00a70e71a7f43e5ca7329c1dddc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2a28d2fb1389a9d99e2bd17937bd9e" id="r_a8a2a28d2fb1389a9d99e2bd17937bd9e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a8a2a28d2fb1389a9d99e2bd17937bd9e">Config::SCORE_YELLOW</a> = 1</td></tr>
+<tr class="separator:a8a2a28d2fb1389a9d99e2bd17937bd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f25b03f3aa44d4b3719f7a1b372c3a4" id="r_a1f25b03f3aa44d4b3719f7a1b372c3a4"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a1f25b03f3aa44d4b3719f7a1b372c3a4">Config::SCORE_GREEN</a> = 3</td></tr>
+<tr class="separator:a1f25b03f3aa44d4b3719f7a1b372c3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7e5fdcfb4deda632bae84691176d16" id="r_adb7e5fdcfb4deda632bae84691176d16"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#adb7e5fdcfb4deda632bae84691176d16">Config::SCORE_ORANGE</a> = 5</td></tr>
+<tr class="separator:adb7e5fdcfb4deda632bae84691176d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdee76332bd8f6efd0b53e6d519051b" id="r_a3fdee76332bd8f6efd0b53e6d519051b"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a3fdee76332bd8f6efd0b53e6d519051b">Config::SCORE_RED</a> = 7</td></tr>
+<tr class="separator:a3fdee76332bd8f6efd0b53e6d519051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5abcca7a7511ccac7f70d634fbb4348" id="r_ac5abcca7a7511ccac7f70d634fbb4348"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ac5abcca7a7511ccac7f70d634fbb4348">Config::SCORE_INDESTRUCTIBLE</a> = -1</td></tr>
+<tr class="separator:ac5abcca7a7511ccac7f70d634fbb4348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59994dbd7d378c45c0e34c48c4e4607e" id="r_a59994dbd7d378c45c0e34c48c4e4607e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a59994dbd7d378c45c0e34c48c4e4607e">Config::PLAYER_STARTING_LIVES</a> = 3</td></tr>
+<tr class="separator:a59994dbd7d378c45c0e34c48c4e4607e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6497123163161249b89c112f06d022b9" id="r_a6497123163161249b89c112f06d022b9"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a6497123163161249b89c112f06d022b9">Config::LEVEL_FILENAME</a> = &quot;level.txt&quot;</td></tr>
+<tr class="separator:a6497123163161249b89c112f06d022b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2806f8154639accfcf57c07c840b9b" id="r_abe2806f8154639accfcf57c07c840b9b"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#abe2806f8154639accfcf57c07c840b9b">Config::FONT_PATH</a> = &quot;font/montserrat.bold.ttf&quot;</td></tr>
+<tr class="separator:abe2806f8154639accfcf57c07c840b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1541bc3cb1fcafdaf26234e12d02028" id="r_ac1541bc3cb1fcafdaf26234e12d02028"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ac1541bc3cb1fcafdaf26234e12d02028">Config::FONT_PIXEL_SIZE</a> = 48</td></tr>
+<tr class="separator:ac1541bc3cb1fcafdaf26234e12d02028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b4b5109688c97582e613d21d3e6cdf" id="r_a51b4b5109688c97582e613d21d3e6cdf"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a51b4b5109688c97582e613d21d3e6cdf">Config::LOGO_PATH</a> = &quot;images/copyright_logo.png&quot;</td></tr>
+<tr class="separator:a51b4b5109688c97582e613d21d3e6cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6902b19c76278d3483c3a12b53c20b4f" id="r_a6902b19c76278d3483c3a12b53c20b4f"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a6902b19c76278d3483c3a12b53c20b4f">Config::LOGO_TARGET_HEIGHT</a> = 30.0f</td></tr>
+<tr class="separator:a6902b19c76278d3483c3a12b53c20b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601d8f390783f52be45dfff7300d98df" id="r_a601d8f390783f52be45dfff7300d98df"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a601d8f390783f52be45dfff7300d98df">Config::LOGO_NAME_SPACING</a> = 5.0f</td></tr>
+<tr class="separator:a601d8f390783f52be45dfff7300d98df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c00ce36a7e60fa845032614566b662" id="r_ab4c00ce36a7e60fa845032614566b662"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ab4c00ce36a7e60fa845032614566b662">Config::COPYRIGHT_NAME</a> = &quot;GAILLARD Maxime&quot;</td></tr>
+<tr class="separator:ab4c00ce36a7e60fa845032614566b662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634b5371fe44c20bde9c358358a8e02a" id="r_a634b5371fe44c20bde9c358358a8e02a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a634b5371fe44c20bde9c358358a8e02a">Config::COLOR_PADDLE</a> = {0.8f, 0.8f, 0.8f}</td></tr>
+<tr class="separator:a634b5371fe44c20bde9c358358a8e02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d494aaf2b44d88633b686a6a7fcff15" id="r_a8d494aaf2b44d88633b686a6a7fcff15"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a8d494aaf2b44d88633b686a6a7fcff15">Config::COLOR_BALL</a> = {0.0f, 0.0f, 1.0f}</td></tr>
+<tr class="separator:a8d494aaf2b44d88633b686a6a7fcff15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4416676d3fe7102995cfd9d67e58f6cd" id="r_a4416676d3fe7102995cfd9d67e58f6cd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a4416676d3fe7102995cfd9d67e58f6cd">Config::COLOR_BG</a> = {0.2f, 0.2f, 0.2f}</td></tr>
+<tr class="separator:a4416676d3fe7102995cfd9d67e58f6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae160f934932cb1260c3a5f796aa710e0" id="r_ae160f934932cb1260c3a5f796aa710e0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ae160f934932cb1260c3a5f796aa710e0">Config::COLOR_BORDER</a> = {0.0f, 0.0f, 0.0f}</td></tr>
+<tr class="separator:ae160f934932cb1260c3a5f796aa710e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5795588e7761bb3138a7012e4199c97c" id="r_a5795588e7761bb3138a7012e4199c97c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a5795588e7761bb3138a7012e4199c97c">Config::COLOR_TEXT_DEFAULT</a> = {1.0f, 1.0f, 1.0f}</td></tr>
+<tr class="separator:a5795588e7761bb3138a7012e4199c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59629351a9f2f7384cdf50de24ffea05" id="r_a59629351a9f2f7384cdf50de24ffea05"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a59629351a9f2f7384cdf50de24ffea05">Config::COLOR_TEXT_ACCENT</a> = {1.0f, 1.0f, 0.0f}</td></tr>
+<tr class="separator:a59629351a9f2f7384cdf50de24ffea05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc0cf57025c64969f91d4828046a8b8" id="r_a3bc0cf57025c64969f91d4828046a8b8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a3bc0cf57025c64969f91d4828046a8b8">Config::COLOR_TEXT_ERROR</a> = {1.0f, 0.2f, 0.2f}</td></tr>
+<tr class="separator:a3bc0cf57025c64969f91d4828046a8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b461620d5cf01613de77b864fdcf50" id="r_ac5b461620d5cf01613de77b864fdcf50"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ac5b461620d5cf01613de77b864fdcf50">Config::COLOR_BUTTON_PLAY</a> = {0.2f, 0.8f, 0.2f}</td></tr>
+<tr class="separator:ac5b461620d5cf01613de77b864fdcf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455faddd08cc53a9dccd28f4e1647b1c" id="r_a455faddd08cc53a9dccd28f4e1647b1c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a455faddd08cc53a9dccd28f4e1647b1c">Config::COLOR_BUTTON_EDITOR</a> = {0.8f, 0.8f, 0.2f}</td></tr>
+<tr class="separator:a455faddd08cc53a9dccd28f4e1647b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8589ceb7b027227a41594549fa558d69" id="r_a8589ceb7b027227a41594549fa558d69"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a8589ceb7b027227a41594549fa558d69">Config::COLOR_BUTTON_QUIT</a> = {0.8f, 0.2f, 0.2f}</td></tr>
+<tr class="separator:a8589ceb7b027227a41594549fa558d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09e9acda5f8a8285b1fad53ef326cb4" id="r_ab09e9acda5f8a8285b1fad53ef326cb4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ab09e9acda5f8a8285b1fad53ef326cb4">Config::COLOR_BUTTON_SAVE</a> = {0.2f, 0.8f, 0.2f}</td></tr>
+<tr class="separator:ab09e9acda5f8a8285b1fad53ef326cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a165210d24e6a367ec2d021da89f47d" id="r_a1a165210d24e6a367ec2d021da89f47d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a1a165210d24e6a367ec2d021da89f47d">Config::COLOR_BUTTON_BACK</a> = {0.8f, 0.2f, 0.2f}</td></tr>
+<tr class="separator:a1a165210d24e6a367ec2d021da89f47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b374cf4f3ba9f7e93e3eef5221de974" id="r_a8b374cf4f3ba9f7e93e3eef5221de974"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a8b374cf4f3ba9f7e93e3eef5221de974">Config::COLOR_BRICK_EMPTY</a> = {0.2f, 0.2f, 0.2f}</td></tr>
+<tr class="separator:a8b374cf4f3ba9f7e93e3eef5221de974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a7b8f11fc450902b114238825d4468" id="r_a94a7b8f11fc450902b114238825d4468"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a94a7b8f11fc450902b114238825d4468">Config::COLOR_HIGHLIGHT</a> = {1.0f, 1.0f, 0.0f}</td></tr>
+<tr class="separator:a94a7b8f11fc450902b114238825d4468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c085d34cd79b83606d51681961fb8da" id="r_a5c085d34cd79b83606d51681961fb8da"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a5c085d34cd79b83606d51681961fb8da">Config::COLOR_EDITOR_SELECT</a> = {0.0f, 1.0f, 1.0f}</td></tr>
+<tr class="separator:a5c085d34cd79b83606d51681961fb8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab40ccdcf1f769a590b677c7c6701162" id="r_aab40ccdcf1f769a590b677c7c6701162"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#aab40ccdcf1f769a590b677c7c6701162">Config::COLOR_BRICK_YELLOW</a> = {0.9f, 0.9f, 0.2f}</td></tr>
+<tr class="separator:aab40ccdcf1f769a590b677c7c6701162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78deade78e04bca583fcaa4ce86b8aa" id="r_ad78deade78e04bca583fcaa4ce86b8aa"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ad78deade78e04bca583fcaa4ce86b8aa">Config::COLOR_BRICK_GREEN</a> = {0.2f, 0.9f, 0.2f}</td></tr>
+<tr class="separator:ad78deade78e04bca583fcaa4ce86b8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa3ef5e4cd9b030cd639853305f255d" id="r_a7fa3ef5e4cd9b030cd639853305f255d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a7fa3ef5e4cd9b030cd639853305f255d">Config::COLOR_BRICK_ORANGE</a> = {0.9f, 0.6f, 0.2f}</td></tr>
+<tr class="separator:a7fa3ef5e4cd9b030cd639853305f255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac626609a977bd4e81f381e25eac76b3f" id="r_ac626609a977bd4e81f381e25eac76b3f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#ac626609a977bd4e81f381e25eac76b3f">Config::COLOR_BRICK_RED</a> = {1.0f, 0.0f, 0.0f}</td></tr>
+<tr class="separator:ac626609a977bd4e81f381e25eac76b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56da5f85bc39a72c432e9dfb8b5158af" id="r_a56da5f85bc39a72c432e9dfb8b5158af"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_config_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a56da5f85bc39a72c432e9dfb8b5158af">Config::COLOR_BRICK_INDESTRUCTIBLE</a> = {0.5f, 0.5f, 0.5f}</td></tr>
+<tr class="separator:a56da5f85bc39a72c432e9dfb8b5158af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1561f35315748e19559f599d7d6bad" id="r_a3c1561f35315748e19559f599d7d6bad"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a3c1561f35315748e19559f599d7d6bad">Config::KEY_EDITOR_PLACE_INDEST</a> = GLFW_KEY_LEFT_SHIFT</td></tr>
+<tr class="separator:a3c1561f35315748e19559f599d7d6bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbf2aa9c5f19e541ad6d61462da0cc2" id="r_a7bbf2aa9c5f19e541ad6d61462da0cc2"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a7bbf2aa9c5f19e541ad6d61462da0cc2">Config::KEY_EDITOR_PLACE_INDEST_ALT</a> = GLFW_KEY_RIGHT_SHIFT</td></tr>
+<tr class="separator:a7bbf2aa9c5f19e541ad6d61462da0cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0937045a3837e4c9ab8e522a4d22bbc5" id="r_a0937045a3837e4c9ab8e522a4d22bbc5"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a0937045a3837e4c9ab8e522a4d22bbc5">Config::KEY_EDITOR_SET_EMPTY</a> = GLFW_KEY_DELETE</td></tr>
+<tr class="separator:a0937045a3837e4c9ab8e522a4d22bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e602a8cbd4d3379654ecb63f1e9ffe" id="r_a35e602a8cbd4d3379654ecb63f1e9ffe"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a35e602a8cbd4d3379654ecb63f1e9ffe">Config::KEY_MENU_TOGGLE</a> = GLFW_KEY_SEMICOLON</td></tr>
+<tr class="separator:a35e602a8cbd4d3379654ecb63f1e9ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3774ed1537fcc2ecdc8d74f3d6d3ffae" id="r_a3774ed1537fcc2ecdc8d74f3d6d3ffae"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_config.html#a3774ed1537fcc2ecdc8d74f3d6d3ffae">Config::KEY_QUIT</a> = GLFW_KEY_ESCAPE</td></tr>
+<tr class="separator:a3774ed1537fcc2ecdc8d74f3d6d3ffae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>G. Maxime </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2.7 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-06 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="ae71449b1cc6e6250b91f539153a7a0d3" name="ae71449b1cc6e6250b91f539153a7a0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71449b1cc6e6250b91f539153a7a0d3">&#9670;&#160;</a></span>M_PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_PI&#160;&#160;&#160;3.14159265358979323846</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante pour le rendu des cercles. </p>
+
+</div>
+</div>
+<a id="a18372412ad2fc3ce1e3240b3cf0efe78" name="a18372412ad2fc3ce1e3240b3cf0efe78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18372412ad2fc3ce1e3240b3cf0efe78">&#9670;&#160;</a></span>STB_IMAGE_IMPLEMENTATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_IMAGE_IMPLEMENTATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bibliothèques incluses. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="a7899b65f1ea0f655e4bbf8d2a5714285" name="a7899b65f1ea0f655e4bbf8d2a5714285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7899b65f1ea0f655e4bbf8d2a5714285">&#9670;&#160;</a></span>GameState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Déclaration des états du jeu. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a3ed53fbeb1eab0443561b68ca0c0b5cf" name="a7899b65f1ea0f655e4bbf8d2a5714285a3ed53fbeb1eab0443561b68ca0c0b5cf"></a>MENU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a4504e1ed59cd9732b8a844e5424e6f13" name="a7899b65f1ea0f655e4bbf8d2a5714285a4504e1ed59cd9732b8a844e5424e6f13"></a>GAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a4698850447aa09571776addcb6a2911b" name="a7899b65f1ea0f655e4bbf8d2a5714285a4698850447aa09571776addcb6a2911b"></a>EDITOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a835d592fc110ac5d9471b44151d96d40" name="a7899b65f1ea0f655e4bbf8d2a5714285a835d592fc110ac5d9471b44151d96d40"></a>EXITING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction principale du programme. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si succès, -1 en cas d'échec d'initialisation. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Initialise le générateur de nombres aléatoires, crée et lance le jeu. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="breakout_8cpp.html">breakout.cpp</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

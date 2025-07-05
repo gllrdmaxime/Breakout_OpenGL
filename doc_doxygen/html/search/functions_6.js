@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['game_0',['Game',['../class_game.html#a4735989677c1cab18866f3ae4ee0aa1c',1,'Game::Game()=default'],['../class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c',1,'Game::Game(const Game &amp;)=delete']]],
+  ['getactivebrickcount_1',['getActiveBrickCount',['../class_level.html#a14fc77a03c437537d44464e7b8cfc4ea',1,'Level']]],
+  ['getbrickcolorbyscore_2',['getBrickColorByScore',['../namespace_config.html#a01ba631273d6bba1066b97234fa5c551',1,'Config']]],
+  ['getdx_3',['getDx',['../class_ball.html#a15e282cd3a82de8acae5dc9ed378f218',1,'Ball']]],
+  ['getdy_4',['getDy',['../class_ball.html#a4c295887d98e8b245c21122749145637',1,'Ball']]],
+  ['getheight_5',['getHeight',['../class_paddle.html#a6089d882922a3e905d4ec2a1be1b90de',1,'Paddle::getHeight()'],['../class_brick.html#a7b781aad586458591792e7aac6c0a2a2',1,'Brick::getHeight()']]],
+  ['getmousepos_6',['getMousePos',['../class_input_manager.html#af73521f8fa23f32faa1b67e8afb3abd7',1,'InputManager']]],
+  ['getmousex_7',['getMouseX',['../class_input_manager.html#aa0e5343495d092578022ea9227566862',1,'InputManager']]],
+  ['getmousey_8',['getMouseY',['../class_input_manager.html#ac08a20de7afce8a1392f97cf2a9b0c2c',1,'InputManager']]],
+  ['getposition_9',['getPosition',['../class_ball.html#a819bd309f23f54000cfc2c3a26566ef6',1,'Ball']]],
+  ['getpreservedvelocity_10',['getPreservedVelocity',['../class_ball.html#ad27d221db0c9bdd8dc688b9512bb5ef4',1,'Ball']]],
+  ['getradius_11',['getRadius',['../class_ball.html#ac93d35a55e06ca1a406cf3cbc49f4e12',1,'Ball']]],
+  ['getrect_12',['getRect',['../class_paddle.html#abd2d4871a3b8f74b7e85365c7ddce55e',1,'Paddle::getRect()'],['../class_brick.html#a45e905fb26bb4e3cbb7772a657592ae6',1,'Brick::getRect() const']]],
+  ['getscorevalue_13',['getScoreValue',['../class_brick.html#a2bf951ef9d3950a403c0a630791f2618',1,'Brick']]],
+  ['getselectedbrickscore_14',['getSelectedBrickScore',['../class_level.html#ad3ffe7c0dbe5b3cd6339ad0d8599b983',1,'Level']]],
+  ['getselectedcol_15',['getSelectedCol',['../class_level.html#a5e65a5c27d6ca01d000ea642e7509b50',1,'Level']]],
+  ['getselectedrow_16',['getSelectedRow',['../class_level.html#ad8e5a68236c22927fe060818daf36a2a',1,'Level']]],
+  ['gettextheight_17',['getTextHeight',['../class_text_renderer.html#a3d3c4995caf40ea6ee2b3a348eba5bf0',1,'TextRenderer']]],
+  ['gettextwidth_18',['getTextWidth',['../class_text_renderer.html#a5a0a33f92b9670031b677d9160d7e043',1,'TextRenderer']]],
+  ['getvelocity_19',['getVelocity',['../class_ball.html#ab30482bc8595109b2033721152693edc',1,'Ball']]],
+  ['getwidth_20',['getWidth',['../class_paddle.html#ae0b980f31e309cbebb845067f8c830cb',1,'Paddle::getWidth()'],['../class_brick.html#a96e15eff8cbd29b3e06c14275acce31e',1,'Brick::getWidth()']]],
+  ['getx_21',['getX',['../class_paddle.html#ae08127142433a33dfbe734a2b1876e80',1,'Paddle::getX()'],['../class_ball.html#af438c37fd83fcf0f5808712d9b456320',1,'Ball::getX()'],['../class_brick.html#a554498e6f8517626be3e4183d19c07cc',1,'Brick::getX()']]],
+  ['gety_22',['getY',['../class_paddle.html#ab27981223156aa4a2b03203733514a6d',1,'Paddle::getY()'],['../class_ball.html#aeb4e2979fb20b91c9e23c1ee6b2897ae',1,'Ball::getY()'],['../class_brick.html#a81a06e65255531f747afa3ad19e5d615',1,'Brick::getY()']]]
+];

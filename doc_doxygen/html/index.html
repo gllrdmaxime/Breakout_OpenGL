@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PIGI_G: PIGI_G</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PIGI_G
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('index.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">PIGI_G </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Projet S8 - Programmation des interfaces graphiques et interactives  </p>
+<p>Sujet : Break Out</p>
+<p>Ce fichier contient l'implémentation du jeu Breakout avec les fonctionnalités suivantes :</p><ul>
+<li>Mécaniques de la raquette et de la balle</li>
+<li>Détection de collision avec les briques et les murs</li>
+<li>Chargement et sauvegarde de niveaux</li>
+<li>Un éditeur de niveaux avec contrôles à la souris et au clavier</li>
+</ul>
+<p>Le jeu utilise OpenGL pour le rendu et GLFW pour la gestion de la fenêtre et des entrées. Il inclut également le rendu de texte avec FreeType et le chargement de textures avec stb_image.</p>
+<p>Le jeu est divisé en plusieurs classes :</p><ul>
+<li><code><a class="el" href="class_paddle.html" title="Représente la raquette contrôlée par le joueur.">Paddle</a></code>: Représente la raquette contrôlée par le joueur.</li>
+<li><code><a class="el" href="class_ball.html" title="Représente la balle du jeu.">Ball</a></code>: Représente la balle qui rebondit sur l'écran.</li>
+<li><code><a class="el" href="class_brick.html" title="Représente une brique individuelle dans le jeu.">Brick</a></code>: Représente les briques individuelles dans le jeu.</li>
+<li><code><a class="el" href="class_level.html" title="Gère la grille de briques, le chargement et la sauvegarde des niveaux.">Level</a></code>: Gère la grille de briques et s'occupe du chargement/sauvegarde des niveaux.</li>
+<li><code><a class="el" href="class_input_manager.html" title="Gère les événements d&#39;entrée du clavier, de la souris et les interactions du curseur.">InputManager</a></code>: Gère les entrées clavier et souris.</li>
+<li><code><a class="el" href="class_text_renderer.html" title="Gère le rendu du texte à l&#39;écran en utilisant FreeType.">TextRenderer</a></code>: Effectue le rendu du texte en utilisant FreeType.</li>
+<li><code><a class="el" href="class_game.html" title="Classe principale du jeu, gérant la boucle de jeu, les états et les objets principaux.">Game</a></code>: La classe principale du jeu qui gère la boucle de jeu et les transitions d'état.</li>
+</ul>
+<p>Le jeu comprend les états suivants :</p><ul>
+<li><code>MENU</code>: Le menu principal où le joueur peut commencer le jeu ou entrer dans l'éditeur.</li>
+<li><code>GAME</code>: L'état principal du jeu.</li>
+<li><code>EDITOR</code>: Un éditeur de niveaux où le joueur peut concevoir des niveaux personnalisés.</li>
+<li><code>EXITING</code>: L'état lorsque le jeu est en train de se fermer.</li>
+</ul>
+<h1><a class="anchor" id="ExternalLibraries"></a>
+Bibliothèques externes</h1>
+<p>FreeType pour le rendu de texte. (Projet Github : <a class="el" href="">https://github.com/freetype</a>)</p>
+<p>Utilisez cette commande pour l'installer sous Linux : </p><div class="fragment"><div class="line">sudo apt install libfreetype6-dev</div>
+</div><!-- fragment --><p>stb_image pour le chargement de textures. Déjà installé dans ./include</p>
+<p>(Projet Github : <a class="el" href="">https://github.com/nothings/stb/blob/master/stb_image.h</a>)</p>
+<h1><a class="anchor" id="Compilation"></a>
+Instructions de compilation</h1>
+<p>Pour compiler le code, utilisez la commande suivante : </p><div class="fragment"><div class="line">g++ -Wall -O2 breakout.cpp -I/usr/include/freetype2 -lglfw -lGL -lfreetype -lX11 -pthread -o break_out</div>
+</div><!-- fragment --><h1><a class="anchor" id="Execution"></a>
+Instructions d'exécution</h1>
+<p>Pour exécuter le code compilé, utilisez la commande suivante : </p><div class="fragment"><div class="line">./break_out</div>
+</div><!-- fragment --><h1><a class="anchor" id="Features"></a>
+Fonctionnalités</h1>
+<ul>
+<li>Mécaniques de la raquette et de la balle avec détection de collision.</li>
+<li>Grille de briques avec des briques destructibles et indestructibles.</li>
+<li>Chargement et sauvegarde de niveaux dans un fichier level.txt.</li>
+<li>Éditeur de niveaux avec contrôles à la souris et au clavier.</li>
+<li>Rendu de texte pour l'HUD et les menus.</li>
+<li>Système de menu avec options pour jouer, éditer les niveaux ou quitter.</li>
+</ul>
+<h1><a class="anchor" id="Controls"></a>
+Contrôles (Clavier AZERTY)</h1>
+<ul>
+<li><b>Mode Jeu</b>:<ul>
+<li>Mouvement de la souris : Déplacer la raquette.</li>
+<li>Clic gauche : Lancer la balle.</li>
+<li><code>M</code> (ou <code>Virgule</code> sur QWERTY): Retourner au menu.</li>
+</ul>
+</li>
+<li><b>Mode Éditeur</b>:<ul>
+<li>Clic gauche : Sélectionner une brique.</li>
+<li>Clic droit : Placer une brique (Maj + Clic droit pour une brique indestructible).</li>
+<li><code>Suppr</code> : Effacer la brique sélectionnée.</li>
+<li><code>M</code> (ou <code>Virgule</code> sur QWERTY): Retourner au menu.</li>
+</ul>
+</li>
+<li><b>Menu</b>:<ul>
+<li>Clic souris : Sélectionner les options du menu.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="KnownIssues"></a>
+Problèmes connus</h1>
+<ul>
+<li>Le jeu pourrait ne pas bien gérer les rapports d'aspect extrêmes.</li>
+<li>L'éditeur ne supporte pas la fonctionnalité d'annulation/rétablissement (undo/redo).</li>
+<li>Les collisions peuvent être un peu imprécises dans certaines situations.</li>
+</ul>
+<h1><a class="anchor" id="FutureWork"></a>
+Travaux futurs</h1>
+<ul>
+<li>Ajouter des power-ups et des mécaniques de jeu supplémentaires.</li>
+<li>Améliorer la détection de collision pour une physique plus réaliste.</li>
+<li>Ajouter le support pour la sauvegarde de plusieurs niveaux.</li>
+<li>Créer un menu pour visualiser les différents niveaux crées.</li>
+<li>Créer un leaderboard pour les scores de chaque niveaux.</li>
+<li>Ajouter des effets sonores et de la musique.</li>
+<li>Implémenter la fonctionnalité d'annulation/rétablissement dans l'éditeur. </li>
+</ul>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

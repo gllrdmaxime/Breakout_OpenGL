@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['color_5fball_0',['COLOR_BALL',['../namespace_config.html#a8d494aaf2b44d88633b686a6a7fcff15',1,'Config']]],
+  ['color_5fbg_1',['COLOR_BG',['../namespace_config.html#a4416676d3fe7102995cfd9d67e58f6cd',1,'Config']]],
+  ['color_5fborder_2',['COLOR_BORDER',['../namespace_config.html#ae160f934932cb1260c3a5f796aa710e0',1,'Config']]],
+  ['color_5fbrick_5fempty_3',['COLOR_BRICK_EMPTY',['../namespace_config.html#a8b374cf4f3ba9f7e93e3eef5221de974',1,'Config']]],
+  ['color_5fbrick_5fgreen_4',['COLOR_BRICK_GREEN',['../namespace_config.html#ad78deade78e04bca583fcaa4ce86b8aa',1,'Config']]],
+  ['color_5fbrick_5findestructible_5',['COLOR_BRICK_INDESTRUCTIBLE',['../namespace_config.html#a56da5f85bc39a72c432e9dfb8b5158af',1,'Config']]],
+  ['color_5fbrick_5forange_6',['COLOR_BRICK_ORANGE',['../namespace_config.html#a7fa3ef5e4cd9b030cd639853305f255d',1,'Config']]],
+  ['color_5fbrick_5fred_7',['COLOR_BRICK_RED',['../namespace_config.html#ac626609a977bd4e81f381e25eac76b3f',1,'Config']]],
+  ['color_5fbrick_5fyellow_8',['COLOR_BRICK_YELLOW',['../namespace_config.html#aab40ccdcf1f769a590b677c7c6701162',1,'Config']]],
+  ['color_5fbutton_5fback_9',['COLOR_BUTTON_BACK',['../namespace_config.html#a1a165210d24e6a367ec2d021da89f47d',1,'Config']]],
+  ['color_5fbutton_5feditor_10',['COLOR_BUTTON_EDITOR',['../namespace_config.html#a455faddd08cc53a9dccd28f4e1647b1c',1,'Config']]],
+  ['color_5fbutton_5fplay_11',['COLOR_BUTTON_PLAY',['../namespace_config.html#ac5b461620d5cf01613de77b864fdcf50',1,'Config']]],
+  ['color_5fbutton_5fquit_12',['COLOR_BUTTON_QUIT',['../namespace_config.html#a8589ceb7b027227a41594549fa558d69',1,'Config']]],
+  ['color_5fbutton_5fsave_13',['COLOR_BUTTON_SAVE',['../namespace_config.html#ab09e9acda5f8a8285b1fad53ef326cb4',1,'Config']]],
+  ['color_5feditor_5fselect_14',['COLOR_EDITOR_SELECT',['../namespace_config.html#a5c085d34cd79b83606d51681961fb8da',1,'Config']]],
+  ['color_5fhighlight_15',['COLOR_HIGHLIGHT',['../namespace_config.html#a94a7b8f11fc450902b114238825d4468',1,'Config']]],
+  ['color_5fpaddle_16',['COLOR_PADDLE',['../namespace_config.html#a634b5371fe44c20bde9c358358a8e02a',1,'Config']]],
+  ['color_5ftext_5faccent_17',['COLOR_TEXT_ACCENT',['../namespace_config.html#a59629351a9f2f7384cdf50de24ffea05',1,'Config']]],
+  ['color_5ftext_5fdefault_18',['COLOR_TEXT_DEFAULT',['../namespace_config.html#a5795588e7761bb3138a7012e4199c97c',1,'Config']]],
+  ['color_5ftext_5ferror_19',['COLOR_TEXT_ERROR',['../namespace_config.html#a3bc0cf57025c64969f91d4828046a8b8',1,'Config']]],
+  ['copyright_5fname_20',['COPYRIGHT_NAME',['../namespace_config.html#ab4c00ce36a7e60fa845032614566b662',1,'Config']]]
+];

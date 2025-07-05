@@ -1,0 +1,1541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PIGI_G: Référence de la classe Game</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PIGI_G
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_game.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-static-methods">Fonctions membres privées statiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_game-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe Game</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe principale du jeu, gérant la boucle de jeu, les états et les objets principaux.  
+ <a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a4735989677c1cab18866f3ae4ee0aa1c" id="r_a4735989677c1cab18866f3ae4ee0aa1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4735989677c1cab18866f3ae4ee0aa1c">Game</a> ()=default</td></tr>
+<tr class="separator:a4735989677c1cab18866f3ae4ee0aa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d112ca6e0e55150d2fdbc704474530" id="r_ae3d112ca6e0e55150d2fdbc704474530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d112ca6e0e55150d2fdbc704474530">~Game</a> ()</td></tr>
+<tr class="separator:ae3d112ca6e0e55150d2fdbc704474530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb28875d74d25fa9e0dcdbe37c6ad89c" id="r_abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb28875d74d25fa9e0dcdbe37c6ad89c">Game</a> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
+<tr class="separator:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead5d069ae11b86a22857d9e7be2f184" id="r_aead5d069ae11b86a22857d9e7be2f184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aead5d069ae11b86a22857d9e7be2f184">operator=</a> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
+<tr class="separator:aead5d069ae11b86a22857d9e7be2f184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff3a6838bad4ea9493c103f96d7bff3" id="r_a8ff3a6838bad4ea9493c103f96d7bff3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff3a6838bad4ea9493c103f96d7bff3">init</a> ()</td></tr>
+<tr class="memdesc:a8ff3a6838bad4ea9493c103f96d7bff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise le jeu.  <br /></td></tr>
+<tr class="separator:a8ff3a6838bad4ea9493c103f96d7bff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab78f5ed0d5ea879157357cf2fb2afa" id="r_a1ab78f5ed0d5ea879157357cf2fb2afa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab78f5ed0d5ea879157357cf2fb2afa">run</a> ()</td></tr>
+<tr class="memdesc:a1ab78f5ed0d5ea879157357cf2fb2afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exécute la boucle principale du jeu.  <br /></td></tr>
+<tr class="separator:a1ab78f5ed0d5ea879157357cf2fb2afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a2648dc91da0dd1424d5b7c45510515a0" id="r_a2648dc91da0dd1424d5b7c45510515a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2648dc91da0dd1424d5b7c45510515a0">update</a> (float dt)</td></tr>
+<tr class="memdesc:a2648dc91da0dd1424d5b7c45510515a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la logique du jeu en fonction de l'état actuel.  <br /></td></tr>
+<tr class="separator:a2648dc91da0dd1424d5b7c45510515a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ddd769261d923827a3cdf41499c843" id="r_a15ddd769261d923827a3cdf41499c843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15ddd769261d923827a3cdf41499c843">render</a> ()</td></tr>
+<tr class="memdesc:a15ddd769261d923827a3cdf41499c843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue le rendu du jeu en fonction de l'état actuel.  <br /></td></tr>
+<tr class="separator:a15ddd769261d923827a3cdf41499c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961f632fbe7f4ba08d23fe9edc7711be" id="r_a961f632fbe7f4ba08d23fe9edc7711be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a961f632fbe7f4ba08d23fe9edc7711be">cleanup</a> ()</td></tr>
+<tr class="memdesc:a961f632fbe7f4ba08d23fe9edc7711be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nettoie les ressources du jeu avant de quitter.  <br /></td></tr>
+<tr class="separator:a961f632fbe7f4ba08d23fe9edc7711be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5406a6c0099bc0d36805ffcc6d35906" id="r_ad5406a6c0099bc0d36805ffcc6d35906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5406a6c0099bc0d36805ffcc6d35906">initGameObjects</a> ()</td></tr>
+<tr class="memdesc:ad5406a6c0099bc0d36805ffcc6d35906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise ou réinitialise les objets pour une nouvelle partie.  <br /></td></tr>
+<tr class="separator:ad5406a6c0099bc0d36805ffcc6d35906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c9c46397b51dfe4b028ee910e87d4f" id="r_a01c9c46397b51dfe4b028ee910e87d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01c9c46397b51dfe4b028ee910e87d4f">resetBallAndPaddle</a> ()</td></tr>
+<tr class="memdesc:a01c9c46397b51dfe4b028ee910e87d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réinitialise la position de la balle (sur la raquette) et de la raquette (au centre).  <br /></td></tr>
+<tr class="separator:a01c9c46397b51dfe4b028ee910e87d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ce1585bcc78e2500b8d13556811e74" id="r_a19ce1585bcc78e2500b8d13556811e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19ce1585bcc78e2500b8d13556811e74">resetAfterLifeLoss</a> ()</td></tr>
+<tr class="memdesc:a19ce1585bcc78e2500b8d13556811e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réinitialise la balle après la perte d'une vie.  <br /></td></tr>
+<tr class="separator:a19ce1585bcc78e2500b8d13556811e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7843b8402df0cda60f465bacae9b6774" id="r_a7843b8402df0cda60f465bacae9b6774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7843b8402df0cda60f465bacae9b6774">initEditorState</a> ()</td></tr>
+<tr class="memdesc:a7843b8402df0cda60f465bacae9b6774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise l'état de l'éditeur de niveaux.  <br /></td></tr>
+<tr class="separator:a7843b8402df0cda60f465bacae9b6774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08484d555aa155e1ecb167ad9ca7a22a" id="r_a08484d555aa155e1ecb167ad9ca7a22a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08484d555aa155e1ecb167ad9ca7a22a">updateMenu</a> (float dt)</td></tr>
+<tr class="memdesc:a08484d555aa155e1ecb167ad9ca7a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la logique du menu principal.  <br /></td></tr>
+<tr class="separator:a08484d555aa155e1ecb167ad9ca7a22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277e729a12bf9f5aa4e45457edb96d79" id="r_a277e729a12bf9f5aa4e45457edb96d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a277e729a12bf9f5aa4e45457edb96d79">renderMenu</a> ()</td></tr>
+<tr class="memdesc:a277e729a12bf9f5aa4e45457edb96d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue le rendu du menu principal.  <br /></td></tr>
+<tr class="separator:a277e729a12bf9f5aa4e45457edb96d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd8b2a5c97309b7b3bf037e81b00528" id="r_a0bd8b2a5c97309b7b3bf037e81b00528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bd8b2a5c97309b7b3bf037e81b00528">updateGame</a> (float dt)</td></tr>
+<tr class="memdesc:a0bd8b2a5c97309b7b3bf037e81b00528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la logique du jeu principal (mode GAME).  <br /></td></tr>
+<tr class="separator:a0bd8b2a5c97309b7b3bf037e81b00528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4573580347746dbb7dbe568383682ed3" id="r_a4573580347746dbb7dbe568383682ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4573580347746dbb7dbe568383682ed3">renderGame</a> ()</td></tr>
+<tr class="memdesc:a4573580347746dbb7dbe568383682ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue le rendu du jeu principal (mode GAME).  <br /></td></tr>
+<tr class="separator:a4573580347746dbb7dbe568383682ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f17c5f65b2df2eaa9b4b5ff90678b88" id="r_a2f17c5f65b2df2eaa9b4b5ff90678b88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f17c5f65b2df2eaa9b4b5ff90678b88">updateEditor</a> (float dt)</td></tr>
+<tr class="memdesc:a2f17c5f65b2df2eaa9b4b5ff90678b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la logique de l'éditeur de niveaux.  <br /></td></tr>
+<tr class="separator:a2f17c5f65b2df2eaa9b4b5ff90678b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204ea65111892ca826f3a65cc8818ea7" id="r_a204ea65111892ca826f3a65cc8818ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a204ea65111892ca826f3a65cc8818ea7">renderEditor</a> ()</td></tr>
+<tr class="memdesc:a204ea65111892ca826f3a65cc8818ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue le rendu de l'éditeur de niveaux.  <br /></td></tr>
+<tr class="separator:a204ea65111892ca826f3a65cc8818ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682a2b711544a5bcd51f2b8506542e7e" id="r_a682a2b711544a5bcd51f2b8506542e7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a682a2b711544a5bcd51f2b8506542e7e">framebufferSizeCallback</a> (int width, int height)</td></tr>
+<tr class="memdesc:a682a2b711544a5bcd51f2b8506542e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode membre appelée lors du redimensionnement du framebuffer.  <br /></td></tr>
+<tr class="separator:a682a2b711544a5bcd51f2b8506542e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Fonctions membres privées statiques</h2></td></tr>
+<tr class="memitem:acfe72546bd5f7b05be473e13c818a135" id="r_acfe72546bd5f7b05be473e13c818a135"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfe72546bd5f7b05be473e13c818a135">errorCallback_GLFW</a> (int error, const char *description)</td></tr>
+<tr class="memdesc:acfe72546bd5f7b05be473e13c818a135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback d'erreur GLFW (statique).  <br /></td></tr>
+<tr class="separator:acfe72546bd5f7b05be473e13c818a135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa384717b81cc4d0e9cb08c2478086b83" id="r_aa384717b81cc4d0e9cb08c2478086b83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa384717b81cc4d0e9cb08c2478086b83">keyCallback_GLFW</a> (GLFWwindow *window, int key, int scancode, int action, int mods)</td></tr>
+<tr class="memdesc:aa384717b81cc4d0e9cb08c2478086b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback des touches clavier GLFW (statique).  <br /></td></tr>
+<tr class="separator:aa384717b81cc4d0e9cb08c2478086b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8f9bf2c007d3b091149d49f96c1e72" id="r_adb8f9bf2c007d3b091149d49f96c1e72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8f9bf2c007d3b091149d49f96c1e72">mouseButtonCallback_GLFW</a> (GLFWwindow *window, int button, int action, int mods)</td></tr>
+<tr class="memdesc:adb8f9bf2c007d3b091149d49f96c1e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback des boutons de la souris GLFW (statique).  <br /></td></tr>
+<tr class="separator:adb8f9bf2c007d3b091149d49f96c1e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b66b6cb18b63723fcf6480ff9dd2e44" id="r_a4b66b6cb18b63723fcf6480ff9dd2e44"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b66b6cb18b63723fcf6480ff9dd2e44">cursorPosCallback_GLFW</a> (GLFWwindow *window, double xpos, double ypos)</td></tr>
+<tr class="memdesc:a4b66b6cb18b63723fcf6480ff9dd2e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback de la position du curseur GLFW (statique).  <br /></td></tr>
+<tr class="separator:a4b66b6cb18b63723fcf6480ff9dd2e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51098a83e78395178610fc678022d9e2" id="r_a51098a83e78395178610fc678022d9e2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51098a83e78395178610fc678022d9e2">framebufferSizeCallback_GLFW</a> (GLFWwindow *window, int width, int height)</td></tr>
+<tr class="memdesc:a51098a83e78395178610fc678022d9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback de redimensionnement du framebuffer GLFW (statique).  <br /></td></tr>
+<tr class="separator:a51098a83e78395178610fc678022d9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a09666febaa311ea495ffa31a5de7c37b" id="r_a09666febaa311ea495ffa31a5de7c37b"><td class="memItemLeft" align="right" valign="top">GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09666febaa311ea495ffa31a5de7c37b">m_window</a> = nullptr</td></tr>
+<tr class="separator:a09666febaa311ea495ffa31a5de7c37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac379ce6b1ac74de3fbec35283e724172" id="r_ac379ce6b1ac74de3fbec35283e724172"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac379ce6b1ac74de3fbec35283e724172">m_windowWidth</a> = <a class="el" href="namespace_config.html#a108e964272e393c46e531187f04ccb6b">Config::DEFAULT_WINDOW_WIDTH</a></td></tr>
+<tr class="separator:ac379ce6b1ac74de3fbec35283e724172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2b6295cffcd73e98cba0ea316d9e92" id="r_a4c2b6295cffcd73e98cba0ea316d9e92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c2b6295cffcd73e98cba0ea316d9e92">m_windowHeight</a> = <a class="el" href="namespace_config.html#a00e0142325b421dbf90f5dd341cf4b94">Config::DEFAULT_WINDOW_HEIGHT</a></td></tr>
+<tr class="separator:a4c2b6295cffcd73e98cba0ea316d9e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2220b4e2dcef67ecc9ab500ed4d290c9" id="r_a2220b4e2dcef67ecc9ab500ed4d290c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="breakout_8cpp.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2220b4e2dcef67ecc9ab500ed4d290c9">m_currentState</a> = <a class="el" href="breakout_8cpp.html#a7899b65f1ea0f655e4bbf8d2a5714285a3ed53fbeb1eab0443561b68ca0c0b5cf">GameState::MENU</a></td></tr>
+<tr class="separator:a2220b4e2dcef67ecc9ab500ed4d290c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdbcb55888726c42c95defc566d9226" id="r_acbdbcb55888726c42c95defc566d9226"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_manager.html">InputManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbdbcb55888726c42c95defc566d9226">m_inputManager</a></td></tr>
+<tr class="separator:acbdbcb55888726c42c95defc566d9226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b56125818348b82aed1f633543f149" id="r_a76b56125818348b82aed1f633543f149"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_text_renderer.html">TextRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b56125818348b82aed1f633543f149">m_textRenderer</a></td></tr>
+<tr class="separator:a76b56125818348b82aed1f633543f149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7b1cf11560b4e2911c02519772d289" id="r_a6c7b1cf11560b4e2911c02519772d289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_paddle.html">Paddle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c7b1cf11560b4e2911c02519772d289">m_paddle</a></td></tr>
+<tr class="separator:a6c7b1cf11560b4e2911c02519772d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a61c19c9521675228a805b8e8038fd1" id="r_a3a61c19c9521675228a805b8e8038fd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a61c19c9521675228a805b8e8038fd1">m_ball</a></td></tr>
+<tr class="separator:a3a61c19c9521675228a805b8e8038fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202cfefe37e26d98a3c3d5eded216253" id="r_a202cfefe37e26d98a3c3d5eded216253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level.html">Level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a202cfefe37e26d98a3c3d5eded216253">m_level</a></td></tr>
+<tr class="separator:a202cfefe37e26d98a3c3d5eded216253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad446db929cdba9d8f3ef461359f734f8" id="r_ad446db929cdba9d8f3ef461359f734f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad446db929cdba9d8f3ef461359f734f8">m_lastTime</a> = 0.0</td></tr>
+<tr class="separator:ad446db929cdba9d8f3ef461359f734f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83db029d0ac11c3abfc978cab0fd7471" id="r_a83db029d0ac11c3abfc978cab0fd7471"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83db029d0ac11c3abfc978cab0fd7471">m_statusMessage</a> = &quot;&quot;</td></tr>
+<tr class="separator:a83db029d0ac11c3abfc978cab0fd7471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af900f147dc8af160ff4eba8faa04cbb1" id="r_af900f147dc8af160ff4eba8faa04cbb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af900f147dc8af160ff4eba8faa04cbb1">m_lives</a> = <a class="el" href="namespace_config.html#a59994dbd7d378c45c0e34c48c4e4607e">Config::PLAYER_STARTING_LIVES</a></td></tr>
+<tr class="separator:af900f147dc8af160ff4eba8faa04cbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2f7dfc65fb47611b0a145138cf59b2" id="r_a7c2f7dfc65fb47611b0a145138cf59b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c2f7dfc65fb47611b0a145138cf59b2">m_score</a> = 0</td></tr>
+<tr class="separator:a7c2f7dfc65fb47611b0a145138cf59b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7842c31e9bfc9ada5c548d725fc7f752" id="r_a7842c31e9bfc9ada5c548d725fc7f752"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7842c31e9bfc9ada5c548d725fc7f752">m_logoTextureID</a> = 0</td></tr>
+<tr class="separator:a7842c31e9bfc9ada5c548d725fc7f752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24b4c9d8e9981db6c77691858c58894" id="r_ae24b4c9d8e9981db6c77691858c58894"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae24b4c9d8e9981db6c77691858c58894">m_logoWidth</a> = 0</td></tr>
+<tr class="separator:ae24b4c9d8e9981db6c77691858c58894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947c5104adbd865798af1f5838ce72a4" id="r_a947c5104adbd865798af1f5838ce72a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a947c5104adbd865798af1f5838ce72a4">m_logoHeight</a> = 0</td></tr>
+<tr class="separator:a947c5104adbd865798af1f5838ce72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ef0db3b5241e035fb638e48d0d2093" id="r_a57ef0db3b5241e035fb638e48d0d2093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57ef0db3b5241e035fb638e48d0d2093">m_bricksHitInCurrentGame</a> = 0</td></tr>
+<tr class="separator:a57ef0db3b5241e035fb638e48d0d2093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4bee9601fa6bd65f2381b7d1f938fc" id="r_a0d4bee9601fa6bd65f2381b7d1f938fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d4bee9601fa6bd65f2381b7d1f938fc">m_firstOrangeBrickHit</a> = false</td></tr>
+<tr class="separator:a0d4bee9601fa6bd65f2381b7d1f938fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f1cecd3e72a20246ebd0abe6bd3021" id="r_ac9f1cecd3e72a20246ebd0abe6bd3021"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f1cecd3e72a20246ebd0abe6bd3021">m_firstRedBrickHit</a> = false</td></tr>
+<tr class="separator:ac9f1cecd3e72a20246ebd0abe6bd3021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd44cd71eeeae909adf897b02a2f623" id="r_a9dd44cd71eeeae909adf897b02a2f623"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dd44cd71eeeae909adf897b02a2f623">m_speedBoost4thBrickDone</a> = false</td></tr>
+<tr class="separator:a9dd44cd71eeeae909adf897b02a2f623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ae0bb57188b1b1b49ab325c1a468af" id="r_a55ae0bb57188b1b1b49ab325c1a468af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55ae0bb57188b1b1b49ab325c1a468af">m_speedBoost12thBrickDone</a> = false</td></tr>
+<tr class="separator:a55ae0bb57188b1b1b49ab325c1a468af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe principale du jeu, gérant la boucle de jeu, les états et les objets principaux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m_window</td><td>Pointeur vers la fenêtre GLFW. </td></tr>
+    <tr><td class="paramname">m_windowWidth</td><td>Largeur actuelle de la fenêtre. </td></tr>
+    <tr><td class="paramname">m_windowHeight</td><td>Hauteur actuelle de la fenêtre. </td></tr>
+    <tr><td class="paramname">m_currentState</td><td>État actuel du jeu (Menu, Jeu, Éditeur, Sortie). </td></tr>
+    <tr><td class="paramname">m_inputManager</td><td>Gestionnaire d'entrées. </td></tr>
+    <tr><td class="paramname">m_textRenderer</td><td>Moteur de rendu de texte. </td></tr>
+    <tr><td class="paramname">m_paddle</td><td>Objet raquette. </td></tr>
+    <tr><td class="paramname">m_ball</td><td>Objet balle. </td></tr>
+    <tr><td class="paramname">m_level</td><td>Objet niveau, gérant les briques. </td></tr>
+    <tr><td class="paramname">m_lastTime</td><td>Temps de la dernière mise à jour, pour calculer le delta-temps. </td></tr>
+    <tr><td class="paramname">m_statusMessage</td><td>Message à afficher à l'écran (ex: "Game Over"). </td></tr>
+    <tr><td class="paramname">m_lives</td><td>Nombre de vies restantes pour le joueur. </td></tr>
+    <tr><td class="paramname">m_score</td><td>Score actuel du joueur. </td></tr>
+    <tr><td class="paramname">m_logoTextureID</td><td>ID de la texture OpenGL pour le logo. </td></tr>
+    <tr><td class="paramname">m_logoWidth</td><td>Largeur de la texture du logo. </td></tr>
+    <tr><td class="paramname">m_logoHeight</td><td>Hauteur de la texture du logo. </td></tr>
+    <tr><td class="paramname">m_bricksHitInCurrentGame</td><td>Compteur de briques touchées dans la partie en cours (pour les bonus de vitesse). </td></tr>
+    <tr><td class="paramname">m_firstOrangeBrickHit</td><td>Indicateur si la première brique orange a été touchée (pour bonus de vitesse). </td></tr>
+    <tr><td class="paramname">m_firstRedBrickHit</td><td>Indicateur si la première brique rouge a été touchée (pour bonus de vitesse). </td></tr>
+    <tr><td class="paramname">m_speedBoost4thBrickDone</td><td>Indicateur si le bonus de vitesse pour la 4ème brique a été appliqué. </td></tr>
+    <tr><td class="paramname">m_speedBoost12thBrickDone</td><td>Indicateur si le bonus de vitesse pour la 12ème brique a été appliqué. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a4735989677c1cab18866f3ae4ee0aa1c" name="a4735989677c1cab18866f3ae4ee0aa1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4735989677c1cab18866f3ae4ee0aa1c">&#9670;&#160;</a></span>Game() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::Game </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3d112ca6e0e55150d2fdbc704474530" name="ae3d112ca6e0e55150d2fdbc704474530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d112ca6e0e55150d2fdbc704474530">&#9670;&#160;</a></span>~Game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::~Game </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb28875d74d25fa9e0dcdbe37c6ad89c" name="abb28875d74d25fa9e0dcdbe37c6ad89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb28875d74d25fa9e0dcdbe37c6ad89c">&#9670;&#160;</a></span>Game() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::Game </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_game.html">Game</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a961f632fbe7f4ba08d23fe9edc7711be" name="a961f632fbe7f4ba08d23fe9edc7711be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961f632fbe7f4ba08d23fe9edc7711be">&#9670;&#160;</a></span>cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::cleanup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nettoie les ressources du jeu avant de quitter. </p>
+
+</div>
+</div>
+<a id="a4b66b6cb18b63723fcf6480ff9dd2e44" name="a4b66b6cb18b63723fcf6480ff9dd2e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b66b6cb18b63723fcf6480ff9dd2e44">&#9670;&#160;</a></span>cursorPosCallback_GLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::cursorPosCallback_GLFW </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>xpos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>ypos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback de la position du curseur GLFW (statique). </p>
+<p>Transmet à l'<a class="el" href="class_input_manager.html" title="Gère les événements d&#39;entrée du clavier, de la souris et les interactions du curseur.">InputManager</a>. </p>
+
+</div>
+</div>
+<a id="acfe72546bd5f7b05be473e13c818a135" name="acfe72546bd5f7b05be473e13c818a135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe72546bd5f7b05be473e13c818a135">&#9670;&#160;</a></span>errorCallback_GLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::errorCallback_GLFW </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>description</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback d'erreur GLFW (statique). </p>
+
+</div>
+</div>
+<a id="a682a2b711544a5bcd51f2b8506542e7e" name="a682a2b711544a5bcd51f2b8506542e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682a2b711544a5bcd51f2b8506542e7e">&#9670;&#160;</a></span>framebufferSizeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::framebufferSizeCallback </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode membre appelée lors du redimensionnement du framebuffer. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Nouvelle largeur du framebuffer. </td></tr>
+    <tr><td class="paramname">height</td><td>Nouvelle hauteur du framebuffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Met à jour les dimensions de la fenêtre, le viewport OpenGL, et recalcule les positions des éléments si nécessaire. </dd></dl>
+
+</div>
+</div>
+<a id="a51098a83e78395178610fc678022d9e2" name="a51098a83e78395178610fc678022d9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51098a83e78395178610fc678022d9e2">&#9670;&#160;</a></span>framebufferSizeCallback_GLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::framebufferSizeCallback_GLFW </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback de redimensionnement du framebuffer GLFW (statique). </p>
+<p>Appelle la méthode membre correspondante. </p>
+
+</div>
+</div>
+<a id="a8ff3a6838bad4ea9493c103f96d7bff3" name="a8ff3a6838bad4ea9493c103f96d7bff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff3a6838bad4ea9493c103f96d7bff3">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise le jeu. </p>
+<dl class="section return"><dt>Renvoie</dt><dd><code>true</code> si l'initialisation est réussie, <code>false</code> sinon. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Configure GLFW, crée une fenêtre, initialise le contexte OpenGL et charge les ressources. </dd>
+<dd>
+Définit la fonction de rappel d'erreur pour GLFW et initialise le moteur de rendu de texte. </dd>
+<dd>
+Charge la texture du logo et configure la taille de la fenêtre en fonction du moniteur principal. </dd>
+<dd>
+Configure le gestionnaire d'entrées et initialise l'état du jeu. </dd>
+<dd>
+Définit la position initiale de la raquette et de la balle. </dd>
+<dd>
+Définit la couleur de fond et active le mélange alpha. </dd>
+<dd>
+Définit le titre de la fenêtre et active la V-Sync. </dd>
+<dd>
+Définit le pointeur utilisateur de la fenêtre sur cette instance du jeu. </dd>
+<dd>
+Définit les fonctions de rappel pour les touches, les boutons de la souris, la position du curseur et la taille du framebuffer pour GLFW. </dd></dl>
+
+</div>
+</div>
+<a id="a7843b8402df0cda60f465bacae9b6774" name="a7843b8402df0cda60f465bacae9b6774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7843b8402df0cda60f465bacae9b6774">&#9670;&#160;</a></span>initEditorState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::initEditorState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise l'état de l'éditeur de niveaux. </p>
+<dl class="section note"><dt>Note</dt><dd>Charge le niveau actuel et calcule les dimensions de la grille. </dd></dl>
+
+</div>
+</div>
+<a id="ad5406a6c0099bc0d36805ffcc6d35906" name="ad5406a6c0099bc0d36805ffcc6d35906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5406a6c0099bc0d36805ffcc6d35906">&#9670;&#160;</a></span>initGameObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::initGameObjects </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise ou réinitialise les objets pour une nouvelle partie. </p>
+<dl class="section note"><dt>Note</dt><dd>Réinitialise les vies, le score, charge le niveau, et positionne la raquette et la balle. </dd></dl>
+
+</div>
+</div>
+<a id="aa384717b81cc4d0e9cb08c2478086b83" name="aa384717b81cc4d0e9cb08c2478086b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa384717b81cc4d0e9cb08c2478086b83">&#9670;&#160;</a></span>keyCallback_GLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::keyCallback_GLFW </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>scancode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mods</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback des touches clavier GLFW (statique). </p>
+<p>Transmet à l'<a class="el" href="class_input_manager.html" title="Gère les événements d&#39;entrée du clavier, de la souris et les interactions du curseur.">InputManager</a> de l'instance <a class="el" href="class_game.html" title="Classe principale du jeu, gérant la boucle de jeu, les états et les objets principaux.">Game</a>. </p>
+
+</div>
+</div>
+<a id="adb8f9bf2c007d3b091149d49f96c1e72" name="adb8f9bf2c007d3b091149d49f96c1e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8f9bf2c007d3b091149d49f96c1e72">&#9670;&#160;</a></span>mouseButtonCallback_GLFW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::mouseButtonCallback_GLFW </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mods</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback des boutons de la souris GLFW (statique). </p>
+<p>Transmet à l'<a class="el" href="class_input_manager.html" title="Gère les événements d&#39;entrée du clavier, de la souris et les interactions du curseur.">InputManager</a>. </p>
+
+</div>
+</div>
+<a id="aead5d069ae11b86a22857d9e7be2f184" name="aead5d069ae11b86a22857d9e7be2f184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead5d069ae11b86a22857d9e7be2f184">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game.html">Game</a> &amp; Game::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_game.html">Game</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15ddd769261d923827a3cdf41499c843" name="a15ddd769261d923827a3cdf41499c843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ddd769261d923827a3cdf41499c843">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effectue le rendu du jeu en fonction de l'état actuel. </p>
+<dl class="section note"><dt>Note</dt><dd>Configure la projection orthographique pour le rendu 2D. </dd></dl>
+
+</div>
+</div>
+<a id="a204ea65111892ca826f3a65cc8818ea7" name="a204ea65111892ca826f3a65cc8818ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204ea65111892ca826f3a65cc8818ea7">&#9670;&#160;</a></span>renderEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::renderEditor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effectue le rendu de l'éditeur de niveaux. </p>
+<dl class="section note"><dt>Note</dt><dd>Affiche la grille d'édition, la surbrillance de la cellule sélectionnée, le titre, les messages et les boutons. </dd></dl>
+
+</div>
+</div>
+<a id="a4573580347746dbb7dbe568383682ed3" name="a4573580347746dbb7dbe568383682ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4573580347746dbb7dbe568383682ed3">&#9670;&#160;</a></span>renderGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::renderGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effectue le rendu du jeu principal (mode GAME). </p>
+<dl class="section note"><dt>Note</dt><dd>Affiche la raquette, la balle, les briques et l'HUD (score, vies, messages). Dessine également des bordures si la grille de briques n'occupe pas toute la largeur de la fenetre. </dd></dl>
+
+</div>
+</div>
+<a id="a277e729a12bf9f5aa4e45457edb96d79" name="a277e729a12bf9f5aa4e45457edb96d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277e729a12bf9f5aa4e45457edb96d79">&#9670;&#160;</a></span>renderMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::renderMenu </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effectue le rendu du menu principal. </p>
+<dl class="section note"><dt>Note</dt><dd>Affiche le titre, les boutons et le logo/copyright. </dd></dl>
+
+</div>
+</div>
+<a id="a19ce1585bcc78e2500b8d13556811e74" name="a19ce1585bcc78e2500b8d13556811e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ce1585bcc78e2500b8d13556811e74">&#9670;&#160;</a></span>resetAfterLifeLoss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::resetAfterLifeLoss </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réinitialise la balle après la perte d'une vie. </p>
+<dl class="section note"><dt>Note</dt><dd>Tente de préserver la vitesse de la balle si elle était significative, sinon utilise la vitesse par défaut. La balle est replacée sur la raquette, immobile. </dd></dl>
+
+</div>
+</div>
+<a id="a01c9c46397b51dfe4b028ee910e87d4f" name="a01c9c46397b51dfe4b028ee910e87d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c9c46397b51dfe4b028ee910e87d4f">&#9670;&#160;</a></span>resetBallAndPaddle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::resetBallAndPaddle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réinitialise la position de la balle (sur la raquette) et de la raquette (au centre). </p>
+<dl class="section note"><dt>Note</dt><dd>La balle est initialisée immobile, prête à être lancée. </dd></dl>
+
+</div>
+</div>
+<a id="a1ab78f5ed0d5ea879157357cf2fb2afa" name="a1ab78f5ed0d5ea879157357cf2fb2afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab78f5ed0d5ea879157357cf2fb2afa">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exécute la boucle principale du jeu. </p>
+<dl class="section note"><dt>Note</dt><dd>Gère la temporisation des trames, les événements, la mise à jour et le rendu. </dd></dl>
+
+</div>
+</div>
+<a id="a2648dc91da0dd1424d5b7c45510515a0" name="a2648dc91da0dd1424d5b7c45510515a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2648dc91da0dd1424d5b7c45510515a0">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour la logique du jeu en fonction de l'état actuel. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Delta-temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f17c5f65b2df2eaa9b4b5ff90678b88" name="a2f17c5f65b2df2eaa9b4b5ff90678b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f17c5f65b2df2eaa9b4b5ff90678b88">&#9670;&#160;</a></span>updateEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::updateEditor </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour la logique de l'éditeur de niveaux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Delta-temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Gère la sélection/placement/suppression de briques, la sauvegarde du niveau et le retour au menu. </dd></dl>
+
+</div>
+</div>
+<a id="a0bd8b2a5c97309b7b3bf037e81b00528" name="a0bd8b2a5c97309b7b3bf037e81b00528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd8b2a5c97309b7b3bf037e81b00528">&#9670;&#160;</a></span>updateGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::updateGame </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour la logique du jeu principal (mode GAME). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Delta-temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Gère le lancement de la balle, les mouvements de la raquette, les collisions, la perte de vies et les conditions de victoire/défaite. </dd></dl>
+
+</div>
+</div>
+<a id="a08484d555aa155e1ecb167ad9ca7a22a" name="a08484d555aa155e1ecb167ad9ca7a22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08484d555aa155e1ecb167ad9ca7a22a">&#9670;&#160;</a></span>updateMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::updateMenu </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour la logique du menu principal. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Delta-temps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Gère les clics sur les boutons du menu pour changer d'état ou quitter. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a3a61c19c9521675228a805b8e8038fd1" name="a3a61c19c9521675228a805b8e8038fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a61c19c9521675228a805b8e8038fd1">&#9670;&#160;</a></span>m_ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ball.html">Ball</a> Game::m_ball</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57ef0db3b5241e035fb638e48d0d2093" name="a57ef0db3b5241e035fb638e48d0d2093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ef0db3b5241e035fb638e48d0d2093">&#9670;&#160;</a></span>m_bricksHitInCurrentGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_bricksHitInCurrentGame = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2220b4e2dcef67ecc9ab500ed4d290c9" name="a2220b4e2dcef67ecc9ab500ed4d290c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2220b4e2dcef67ecc9ab500ed4d290c9">&#9670;&#160;</a></span>m_currentState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="breakout_8cpp.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> Game::m_currentState = <a class="el" href="breakout_8cpp.html#a7899b65f1ea0f655e4bbf8d2a5714285a3ed53fbeb1eab0443561b68ca0c0b5cf">GameState::MENU</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d4bee9601fa6bd65f2381b7d1f938fc" name="a0d4bee9601fa6bd65f2381b7d1f938fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4bee9601fa6bd65f2381b7d1f938fc">&#9670;&#160;</a></span>m_firstOrangeBrickHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::m_firstOrangeBrickHit = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f1cecd3e72a20246ebd0abe6bd3021" name="ac9f1cecd3e72a20246ebd0abe6bd3021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f1cecd3e72a20246ebd0abe6bd3021">&#9670;&#160;</a></span>m_firstRedBrickHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::m_firstRedBrickHit = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbdbcb55888726c42c95defc566d9226" name="acbdbcb55888726c42c95defc566d9226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbdbcb55888726c42c95defc566d9226">&#9670;&#160;</a></span>m_inputManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_input_manager.html">InputManager</a> Game::m_inputManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad446db929cdba9d8f3ef461359f734f8" name="ad446db929cdba9d8f3ef461359f734f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad446db929cdba9d8f3ef461359f734f8">&#9670;&#160;</a></span>m_lastTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Game::m_lastTime = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a202cfefe37e26d98a3c3d5eded216253" name="a202cfefe37e26d98a3c3d5eded216253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202cfefe37e26d98a3c3d5eded216253">&#9670;&#160;</a></span>m_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level.html">Level</a> Game::m_level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af900f147dc8af160ff4eba8faa04cbb1" name="af900f147dc8af160ff4eba8faa04cbb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af900f147dc8af160ff4eba8faa04cbb1">&#9670;&#160;</a></span>m_lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_lives = <a class="el" href="namespace_config.html#a59994dbd7d378c45c0e34c48c4e4607e">Config::PLAYER_STARTING_LIVES</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a947c5104adbd865798af1f5838ce72a4" name="a947c5104adbd865798af1f5838ce72a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947c5104adbd865798af1f5838ce72a4">&#9670;&#160;</a></span>m_logoHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_logoHeight = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7842c31e9bfc9ada5c548d725fc7f752" name="a7842c31e9bfc9ada5c548d725fc7f752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7842c31e9bfc9ada5c548d725fc7f752">&#9670;&#160;</a></span>m_logoTextureID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint Game::m_logoTextureID = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24b4c9d8e9981db6c77691858c58894" name="ae24b4c9d8e9981db6c77691858c58894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24b4c9d8e9981db6c77691858c58894">&#9670;&#160;</a></span>m_logoWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_logoWidth = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c7b1cf11560b4e2911c02519772d289" name="a6c7b1cf11560b4e2911c02519772d289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7b1cf11560b4e2911c02519772d289">&#9670;&#160;</a></span>m_paddle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_paddle.html">Paddle</a> Game::m_paddle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c2f7dfc65fb47611b0a145138cf59b2" name="a7c2f7dfc65fb47611b0a145138cf59b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2f7dfc65fb47611b0a145138cf59b2">&#9670;&#160;</a></span>m_score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_score = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55ae0bb57188b1b1b49ab325c1a468af" name="a55ae0bb57188b1b1b49ab325c1a468af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ae0bb57188b1b1b49ab325c1a468af">&#9670;&#160;</a></span>m_speedBoost12thBrickDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::m_speedBoost12thBrickDone = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dd44cd71eeeae909adf897b02a2f623" name="a9dd44cd71eeeae909adf897b02a2f623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd44cd71eeeae909adf897b02a2f623">&#9670;&#160;</a></span>m_speedBoost4thBrickDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::m_speedBoost4thBrickDone = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83db029d0ac11c3abfc978cab0fd7471" name="a83db029d0ac11c3abfc978cab0fd7471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83db029d0ac11c3abfc978cab0fd7471">&#9670;&#160;</a></span>m_statusMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Game::m_statusMessage = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76b56125818348b82aed1f633543f149" name="a76b56125818348b82aed1f633543f149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b56125818348b82aed1f633543f149">&#9670;&#160;</a></span>m_textRenderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_text_renderer.html">TextRenderer</a> Game::m_textRenderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09666febaa311ea495ffa31a5de7c37b" name="a09666febaa311ea495ffa31a5de7c37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09666febaa311ea495ffa31a5de7c37b">&#9670;&#160;</a></span>m_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLFWwindow* Game::m_window = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c2b6295cffcd73e98cba0ea316d9e92" name="a4c2b6295cffcd73e98cba0ea316d9e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2b6295cffcd73e98cba0ea316d9e92">&#9670;&#160;</a></span>m_windowHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_windowHeight = <a class="el" href="namespace_config.html#a00e0142325b421dbf90f5dd341cf4b94">Config::DEFAULT_WINDOW_HEIGHT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac379ce6b1ac74de3fbec35283e724172" name="ac379ce6b1ac74de3fbec35283e724172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac379ce6b1ac74de3fbec35283e724172">&#9670;&#160;</a></span>m_windowWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::m_windowWidth = <a class="el" href="namespace_config.html#a108e964272e393c46e531187f04ccb6b">Config::DEFAULT_WINDOW_WIDTH</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="breakout_8cpp.html">breakout.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_game.html">Game</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
